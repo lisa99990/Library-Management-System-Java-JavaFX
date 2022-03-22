@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="157.0" prefWidth="289.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.controller.OverdueController">
+   <children>
+      <Text layoutX="32.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ISBN: " />
+      <TextField fx:id="isbn" layoutX="97.0" layoutY="65.0" />
+      <Text layoutX="90.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Find overdue copies" />
+      <Button fx:id="btn" layoutX="216.0" layoutY="105.0" mnemonicParsing="false" onAction="#findOverdue" text="Find" />
+      <Button fx:id="backBtn" layoutX="32.0" layoutY="105.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+</AnchorPane>

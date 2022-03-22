@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane prefHeight="361.0" prefWidth="608.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.controller.ShowOverdueController">
+   <children>
+      <TableView fx:id="overdueTable" layoutX="14.0" layoutY="14.0" prefHeight="299.0" prefWidth="581.0">
+        <columns>
+        				<TableColumn prefWidth="103.0" text="ISBN">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="isbn" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="194.0" text="Title">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="title" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="80.0" text="CopyId">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="copyNum" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="103.0" text="Member Id">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="memberId" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="103.0" text="Due Date">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="dueDate" />
+                           </cellValueFactory>
+                        </TableColumn>
+        </columns>
+      </TableView>
+      <Button fx:id="backBtn" layoutX="282.0" layoutY="323.0" mnemonicParsing="false" onAction="#back" text="Back" />
+   </children>
+	
+</AnchorPane>

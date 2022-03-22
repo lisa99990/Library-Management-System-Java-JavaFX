@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="583.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.controller.AddAuthorController">
+   <children>
+      <Text layoutX="143.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add author information" />
+      <Text layoutX="60.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First name:" />
+      <TextField fx:id="fname" layoutX="143.0" layoutY="84.0" prefHeight="27.0" prefWidth="191.0" />
+      <Text layoutX="60.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last name:" />
+      <TextField fx:id="lname" layoutX="143.0" layoutY="127.0" prefHeight="27.0" prefWidth="191.0" />
+      <Text layoutX="60.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone:" />
+      <TextField fx:id="phone" layoutX="143.0" layoutY="169.0" prefHeight="27.0" prefWidth="191.0" />
+      <Text layoutX="122.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Author's adderss information" />
+      <Text layoutX="63.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Street:" />
+      <Text layoutX="74.0" layoutY="411.0" strokeType="OUTSIDE" strokeWidth="0.0" text="City:" />
+      <Text layoutX="70.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="State:" />
+      <Text layoutX="79.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zip:" />
+      <TextField fx:id="street" layoutX="145.0" layoutY="354.0" prefHeight="27.0" prefWidth="191.0" />
+      <Text layoutX="60.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Short Bio:" />
+      <TextArea fx:id="bio" layoutX="143.0" layoutY="216.0" prefHeight="68.0" prefWidth="191.0" />
+      <TextField fx:id="city" layoutX="145.0" layoutY="393.0" prefHeight="27.0" prefWidth="191.0" />
+      <TextField fx:id="state" layoutX="145.0" layoutY="435.0" prefHeight="27.0" prefWidth="191.0" />
+      <TextField fx:id="zip" layoutX="175.0" layoutY="473.0" />
+      <Button fx:id="authorBtn" layoutX="161.0" layoutY="527.0" mnemonicParsing="false" onAction="#addAuthor" text="Add author" />
+   </children>
+</AnchorPane>

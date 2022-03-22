@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+
+<AnchorPane prefHeight="321.0" prefWidth="746.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="business.controller.CheckoutTableController">
+   <children>
+      <AnchorPane layoutX="-121.0" layoutY="-144.0" prefHeight="200.0" prefWidth="200.0" />
+      <TableView fx:id="checkoutDTOTableView" layoutX="38.0" layoutY="55.0" prefHeight="247.0" prefWidth="680.0">
+        <columns>
+        
+          <TableColumn prefWidth="110.0" text="MemberId" >
+           <cellValueFactory>
+                              <PropertyValueFactory property="MemberId" />
+                           </cellValueFactory>
+                        </TableColumn>
+          <TableColumn minWidth="5.0" prefWidth="105.0" text="Title" >
+           <cellValueFactory>
+                              <PropertyValueFactory property="Title" />
+                           </cellValueFactory>
+                        </TableColumn>
+            <TableColumn prefWidth="164.0" text="CopyNum" >
+             <cellValueFactory>
+                              <PropertyValueFactory property="CopyNum" />
+                           </cellValueFactory>
+                        </TableColumn>
+            <TableColumn prefWidth="119.0" text="DateCheckout" >
+             <cellValueFactory>
+                              <PropertyValueFactory property="DateCheckout" />
+                           </cellValueFactory>
+                        </TableColumn>
+            <TableColumn prefWidth="181.0" text="DueDate" >
+             <cellValueFactory>
+                              <PropertyValueFactory property="DueDate" />
+                           </cellValueFactory>
+                        </TableColumn>
+        </columns>
+      </TableView>
+      <Text layoutX="350.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Checkout Record" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+
+<AnchorPane prefHeight="531.0" prefWidth="551.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="business.controller.AllTableController">
+   <children>
+      <Text layoutX="177.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Greetings! Librarian">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TableView fx:id="bookDTOTableView" layoutX="17.0" layoutY="81.0" prefHeight="429.0" prefWidth="517.0">
+                     <columns>
+                        <TableColumn prefWidth="103.0" text="ISBN">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="isbn" />
+                           </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="194.0" text="Title">
+                           <cellValueFactory>
+                              <PropertyValueFactory property="title" />
+                           </cellValueFactory>
+                        </TableColumn>
+            <!-- <TableColumn prefWidth="75.0" text="CopyNum" />
+            <TableColumn prefWidth="75.0" text="MemberId" />
+            <TableColumn prefWidth="75.0" text="Due date" /> -->
+                     </columns>
+                  </TableView>
+      <Text fx:id="mainText" layoutX="215.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books in our collection" />
+      <Button fx:id="backBtn" layoutX="390.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="27.0" prefWidth="144.0" text="Back to Menu" />
+<!--       <Button fx:id="overDueBtn" layoutX="17.0" layoutY="14.0" mnemonicParsing="false" onAction="#setOverdueBooks" prefHeight="27.0" prefWidth="144.0" text="Show overdue books" /> -->
+   </children>
+</AnchorPane>
